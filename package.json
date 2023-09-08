@@ -1,0 +1,45 @@
+{
+  "name": "wallets-tools",
+  "version": "1.0.0",
+  "description": "💎",
+  "type": "module",
+  "scripts": {
+    "generate:seeds": "npx ts-node seeds.ts",
+    "seeds:evm:addresses": "npx ts-node evm/seeds-to-addresses.ts",
+    "seeds:evm:privates": "npx ts-node evm/seeds-to-privates.ts",
+    "privates:evm:addresses": "npx ts-node evm/privates-to-addresses.ts",
+    "seeds:aptos:addresses": "npx ts-node aptos/seeds-to-addresses.ts",
+    "seeds:aptos:privates": "npx ts-node aptos/seeds-to-privates.ts",
+    "privates:aptos:addresses": "npx ts-node aptos/privates-to-addresses.ts",
+    "seeds:sui:addresses": "npx ts-node sui/seeds-to-addresses.ts",
+    "seeds:sui:privates": "npx ts-node sui/seeds-to-privates.ts",
+    "privates:sui:addresses": "npx ts-node sui/privates-to-addresses.ts",
+    "seeds:starknet:argent:addresses": "npx ts-node starknet/argent/seeds-to-addresses.ts",
+    "seeds:starknet:argent:privates": "npx ts-node starknet/argent/seeds-to-privates.ts",
+    "privates:starknet:argent:addresses": "npx ts-node starknet/argent/privates-to-addresses.ts",
+    "seeds:starknet:braavos:addresses": "npx ts-node starknet/braavos/seeds-to-addresses.ts",
+    "seeds:starknet:braavos:privates": "npx ts-node starknet/braavos/seeds-to-privates.ts",
+    "privates:starknet:braavos:addresses": "npx ts-node starknet/braavos/privates-to-addresses.ts",
+    "shuffle": "npx ts-node misc/shuffle.ts",
+    "group": "npx ts-node misc/group.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raznorabochiy",
+  "homepage": "https://t.me/raznorabochiy_notes",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash": "^4.14.197",
+    "@types/node": "^18.11.14",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@mysten/sui.js": "^0.41.1",
+    "@scure/bip32": "^1.3.2",
+    "@scure/bip39": "^1.2.1",
+    "aptos": "^1.19.0",
+    "ethers": "^6.7.1",
+    "lodash": "^4.17.21",
+    "starknet": "^5.19.5"
+  }
+}

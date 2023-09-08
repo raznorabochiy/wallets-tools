@@ -1,0 +1,6 @@
+.vscode
+node_modules
+.DS_Store
+seeds.txt
+addresses.txt
+privates.txt
