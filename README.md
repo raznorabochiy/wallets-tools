@@ -48,15 +48,22 @@ npm install
 
 ### StarkNet (Argent X)
 
-`npm run seeds:starknet:argent:addresses` — выводит Argent-адреса из seed-фраз
-хранящихся в файле seeds.txt и записывает их в файл addresses.txt
+`npm run seeds:starknet:argent:addresses` — выводит Argent-адреса (Cairo 1.0) из
+seed-фраз хранящихся в файле seeds.txt и записывает их в файл addresses.txt
+
+`npm run seeds:starknet:argent:addresses v0` — выводит Argent-адреса (Cairo 0)
+из seed-фраз хранящихся в файле seeds.txt и записывает их в файл addresses.txt
 
 `npm run seeds:starknet:argent:privates` — выводит Argent-приватники из
 seed-фраз хранящихся в файле seeds.txt и записывает их в файл privates.txt
 
-`npm run privates:starknet:argent:addresses` — выводит Argent-адреса из
-Argent-приватников хранящихся в файле privates.txt и записывает их в файл
+`npm run privates:starknet:argent:addresses` — выводит Argent-адреса (Cairo 1.0)
+из Argent-приватников хранящихся в файле privates.txt и записывает их в файл
 addresses.txt
+
+`npm run privates:starknet:argent:addresses v0` — выводит Argent-адреса
+(Cairo 0) из Argent-приватников хранящихся в файле privates.txt и записывает их
+в файл addresses.txt
 
 ### StarkNet (Braavos)
 
@@ -75,9 +82,9 @@ addresses.txt
 `npm run shuffle privates.txt` — перемешивает строки в текстовом файле (в данном
 примере privates.txt) и записывает их в файл privates.shuffled.txt
 
-`npm run groups privates.shuffled.txt 9` — группирует строки в текстовом файле
-(в данном примере privates.shuffled.txt, группы по 9 строк) и записывает их в
-файл privates.shuffled.grouped.txt
+`npm run group privates.shuffled.txt 9` — группирует строки в текстовом файле (в
+данном примере privates.shuffled.txt, группы по 9 строк) и записывает их в файл
+privates.shuffled.grouped.txt
 
 ---
 

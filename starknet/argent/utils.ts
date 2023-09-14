@@ -1,8 +1,10 @@
 import { HDNodeWallet, Mnemonic } from "ethers";
 import { CallData, ec, hash } from "starknet";
 import {
-  ARGENT_X_ACCOUNT_CLASS_HASH,
+  ARGENT_X_ACCOUNT_CLASS_HASH_V0,
+  ARGENT_X_ACCOUNT_CLASS_HASH_V1_0,
   ARGENT_X_PROXY_CLASS_HASH,
+  Cairo,
   STARKNET_DERIVATION_PATH,
 } from "../../constants";
 import { zeroPad } from "../../utils";
@@ -18,19 +20,35 @@ export function getPrivateKeyFromSeed(seed: string) {
   return zeroPad(result);
 }
 
-export function getArgentXAddress(key: string) {
+export function getArgentXAddress(key: string, cairo: Cairo) {
   const { getSelectorFromName, calculateContractAddressFromHash } = hash;
   const starkKey = ec.starkCurve.getStarkKey(key);
 
+  if (cairo === Cairo.v0) {
+    const constructorCallData = CallData.compile({
+      implementation: ARGENT_X_ACCOUNT_CLASS_HASH_V0,
+      selector: getSelectorFromName("initialize"),
+      calldata: CallData.compile({ signer: starkKey, guardian: "0" }),
+    });
+
+    const result = calculateContractAddressFromHash(
+      starkKey,
+      ARGENT_X_PROXY_CLASS_HASH,
+      constructorCallData,
+      0,
+    );
+
+    return zeroPad(result);
+  }
+
   const constructorCallData = CallData.compile({
-    implementation: ARGENT_X_ACCOUNT_CLASS_HASH,
-    selector: getSelectorFromName("initialize"),
-    calldata: CallData.compile({ signer: starkKey, guardian: "0" }),
+    owner: starkKey,
+    guardian: 0n,
   });
 
   const result = calculateContractAddressFromHash(
     starkKey,
-    ARGENT_X_PROXY_CLASS_HASH,
+    ARGENT_X_ACCOUNT_CLASS_HASH_V1_0,
     constructorCallData,
     0,
   );
