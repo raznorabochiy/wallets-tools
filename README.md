@@ -77,6 +77,17 @@ seed-фраз хранящихся в файле seeds.txt и записывае
 Braavos-приватников хранящихся в файле privates.txt и записывает их в файл
 addresses.txt
 
+### Aleo
+
+`npm run seeds:aleo:addresses` — выводит Aleo-адреса из seed-фраз хранящихся в
+файле seeds.txt и записывает их в файл addresses.txt
+
+`npm run seeds:aleo:privates` — выводит Aleo-приватники из seed-фраз хранящихся
+в файле seeds.txt и записывает их в файл privates.txt
+
+`npm run privates:aleo:addresses` — выводит Aleo-адреса из EVM-приватников
+хранящихся в файле privates.txt и записывает их в файл addresses.txt
+
 ### Другое
 
 `npm run shuffle privates.txt` — перемешивает строки в текстовом файле (в данном

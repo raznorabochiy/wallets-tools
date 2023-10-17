@@ -5,6 +5,7 @@ export const ADDRESSES_FILENAME = "addresses.txt";
 export const GROUP_SIZE_DEFAULT = 9;
 export const APTOS_DERIVATION_PATH = "m/44'/637'/0'/0'/0'";
 export const STARKNET_DERIVATION_PATH = "m/44'/9004'/0'/0/0";
+export const ALEO_DERIVATION_PATH = "m/44'/0'/0'/0'";
 export const ARGENT_X_PROXY_CLASS_HASH =
   "0x25ec026985a3bf9d0cc1fe17326b245dfdc3ff89b8fde106542a3ea56c5a918";
 export const ARGENT_X_ACCOUNT_CLASS_HASH_V0 =

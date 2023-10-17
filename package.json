@@ -19,6 +19,9 @@
     "privates:starknet:argent:addresses": "npx ts-node starknet/argent/privates-to-addresses.ts",
     "seeds:starknet:braavos:addresses": "npx ts-node starknet/braavos/seeds-to-addresses.ts",
     "seeds:starknet:braavos:privates": "npx ts-node starknet/braavos/seeds-to-privates.ts",
+    "privates:aleo:addresses": "npx ts-node aleo/privates-to-addresses.ts ",
+    "seeds:aleo:addresses": "npx ts-node aleo/seeds-to-addresses.ts",
+    "seeds:aleo:privates": "npx ts-node aleo/seeds-to-privates.ts",
     "privates:starknet:braavos:addresses": "npx ts-node starknet/braavos/privates-to-addresses.ts",
     "shuffle": "npx ts-node misc/shuffle.ts",
     "group": "npx ts-node misc/group.ts",
@@ -34,6 +37,8 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "@aleohq/sdk": "^0.6.2",
+    "@demox-labs/aleo-hd-key": "^0.0.1",
     "@mysten/sui.js": "^0.41.1",
     "@scure/bip32": "^1.3.2",
     "@scure/bip39": "^1.2.1",
