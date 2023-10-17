@@ -89,7 +89,7 @@ addresses.txt
 `npm run seeds:aleo:privates` — выводит Aleo-приватники из seed-фраз хранящихся
 в файле seeds.txt и записывает их в файл privates.txt
 
-`npm run privates:aleo:addresses` — выводит Aleo-адреса из EVM-приватников
+`npm run privates:aleo:addresses` — выводит Aleo-адреса из Aleo-приватников
 хранящихся в файле privates.txt и записывает их в файл addresses.txt
 
 ### Другое
