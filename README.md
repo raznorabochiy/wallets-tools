@@ -1,5 +1,9 @@
 # Wallets Tools 💎
 
+<p align="center">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Gem%20Stone.webp" width="200" />
+</p>
+
 ## Установка
 
 ```
