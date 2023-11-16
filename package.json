@@ -20,10 +20,13 @@
     "privates:starknet:argent:addresses": "npm run ts-loader starknet/argent/privates-to-addresses.ts",
     "seeds:starknet:braavos:addresses": "npm run ts-loader starknet/braavos/seeds-to-addresses.ts",
     "seeds:starknet:braavos:privates": "npm run ts-loader starknet/braavos/seeds-to-privates.ts",
-    "privates:aleo:addresses": "npm run ts-loader aleo/privates-to-addresses.ts ",
+    "privates:starknet:braavos:addresses": "npm run ts-loader starknet/braavos/privates-to-addresses.ts",
     "seeds:aleo:addresses": "npm run ts-loader aleo/seeds-to-addresses.ts",
     "seeds:aleo:privates": "npm run ts-loader aleo/seeds-to-privates.ts",
-    "privates:starknet:braavos:addresses": "npm run ts-loader starknet/braavos/privates-to-addresses.ts",
+    "privates:aleo:addresses": "npm run ts-loader aleo/privates-to-addresses.ts ",
+    "seeds:solana:addresses": "npm run ts-loader solana/seeds-to-addresses.ts",
+    "seeds:solana:privates": "npm run ts-loader solana/seeds-to-privates.ts",
+    "privates:solana:addresses": "npm run ts-loader solana/privates-to-addresses.ts",
     "shuffle": "npm run ts-loader misc/shuffle.ts",
     "group": "npm run ts-loader misc/group.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -43,9 +46,12 @@
     "@mysten/sui.js": "^0.41.1",
     "@scure/bip32": "^1.3.2",
     "@scure/bip39": "^1.2.1",
+    "@solana/web3.js": "^1.87.6",
     "aptos": "^1.19.0",
+    "bs58": "^5.0.0",
     "ethers": "^6.7.1",
     "lodash": "^4.17.21",
+    "micro-ed25519-hdkey": "^0.1.2",
     "starknet": "^5.19.5"
   }
 }

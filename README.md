@@ -92,6 +92,18 @@ addresses.txt
 `npm run privates:aleo:addresses` — выводит Aleo-адреса из Aleo-приватников
 хранящихся в файле privates.txt и записывает их в файл addresses.txt
 
+### Solana
+
+`npm run seeds:solana:addresses` — выводит Solana-адреса из seed-фраз хранящихся
+в файле seeds.txt и записывает их в файл addresses.txt
+
+`npm run seeds:solana:privates` — выводит Solana-приватники из seed-фраз
+хранящихся в файле seeds.txt и записывает их в файл privates.txt
+
+`npm run privates:solana:addresses` — выводит Solana-адреса из
+Solana-приватников хранящихся в файле privates.txt и записывает их в файл
+addresses.txt
+
 ### Другое
 
 `npm run shuffle privates.txt` — перемешивает строки в текстовом файле (в данном
