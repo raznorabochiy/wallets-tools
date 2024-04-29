@@ -12,106 +12,70 @@ npm install
 
 ## Запуск
 
-### Сид-фразы
+```
+npm start
+```
 
-`npm run generate:seeds 100` — генерирует N seed-фраз (в данном примере 100) и
-записывает их в файл seeds.txt
+### Скрипт может
 
-### EVM
+1. Сгенерировать новые сид-фразы
+2. Вычислить приватники из сид-фраз
+3. Вычислить адреса из сид-фраз
+4. Вычислить адреса из приватников
 
-`npm run seeds:evm:addresses` — выводит EVM-адреса из seed-фраз хранящихся в
-файле seeds.txt и записывает их в файл addresses.txt
+### Поддерживаемые сети
 
-`npm run seeds:evm:privates` — выводит EVM-приватники из seed-фраз хранящихся в
-файле seeds.txt и записывает их в файл privates.txt
+- Aleo
+- Aptos
+- Cosmos (много разных сетей, смотри ниже)
+- EVM
+- Solana
+- StarkNet (ArgentX, Braavos)
+- Sui
 
-`npm run privates:evm:addresses` — выводит EVM-адреса из EVM-приватников
-хранящихся в файле privates.txt и записывает их в файл addresses.txt
+### Поддерживаемые Cosmos-сети
 
-### Aptos
-
-`npm run seeds:aptos:addresses` — выводит Aptos-адреса из seed-фраз хранящихся в
-файле seeds.txt и записывает их в файл addresses.txt
-
-`npm run seeds:aptos:privates` — выводит Aptos-приватники из seed-фраз
-хранящихся в файле seeds.txt и записывает их в файл privates.txt
-
-`npm run privates:aptos:addresses` — выводит Aptos-адреса из Aptos-приватников
-хранящихся в файле privates.txt и записывает их в файл addresses.txt
-
-### SUI
-
-`npm run seeds:sui:addresses` — выводит SUI-адреса из seed-фраз хранящихся в
-файле seeds.txt и записывает их в файл addresses.txt
-
-`npm run seeds:sui:privates` — выводит SUI-приватники из seed-фраз хранящихся в
-файле seeds.txt и записывает их в файл privates.txt
-
-`npm run privates:sui:addresses` — выводит SUI-адреса из SUI-приватников
-хранящихся в файле privates.txt и записывает их в файл addresses.txt
-
-### StarkNet (Argent X)
-
-`npm run seeds:starknet:argent:addresses` — выводит Argent-адреса (Cairo 1.0) из
-seed-фраз хранящихся в файле seeds.txt и записывает их в файл addresses.txt
-
-`npm run seeds:starknet:argent:addresses v0` — выводит Argent-адреса (Cairo 0)
-из seed-фраз хранящихся в файле seeds.txt и записывает их в файл addresses.txt
-
-`npm run seeds:starknet:argent:privates` — выводит Argent-приватники из
-seed-фраз хранящихся в файле seeds.txt и записывает их в файл privates.txt
-
-`npm run privates:starknet:argent:addresses` — выводит Argent-адреса (Cairo 1.0)
-из Argent-приватников хранящихся в файле privates.txt и записывает их в файл
-addresses.txt
-
-`npm run privates:starknet:argent:addresses v0` — выводит Argent-адреса
-(Cairo 0) из Argent-приватников хранящихся в файле privates.txt и записывает их
-в файл addresses.txt
-
-### StarkNet (Braavos)
-
-`npm run seeds:starknet:braavos:addresses` — выводит Braavos-адреса из seed-фраз
-хранящихся в файле seeds.txt и записывает их в файл addresses.txt
-
-`npm run seeds:starknet:braavos:privates` — выводит Braavos-приватники из
-seed-фраз хранящихся в файле seeds.txt и записывает их в файл privates.txt
-
-`npm run privates:starknet:braavos:addresses` — выводит Braavos-адреса из
-Braavos-приватников хранящихся в файле privates.txt и записывает их в файл
-addresses.txt
-
-### Aleo
-
-`npm run seeds:aleo:addresses` — выводит Aleo-адреса из seed-фраз хранящихся в
-файле seeds.txt и записывает их в файл addresses.txt
-
-`npm run seeds:aleo:privates` — выводит Aleo-приватники из seed-фраз хранящихся
-в файле seeds.txt и записывает их в файл privates.txt
-
-`npm run privates:aleo:addresses` — выводит Aleo-адреса из Aleo-приватников
-хранящихся в файле privates.txt и записывает их в файл addresses.txt
-
-### Solana
-
-`npm run seeds:solana:addresses` — выводит Solana-адреса из seed-фраз хранящихся
-в файле seeds.txt и записывает их в файл addresses.txt
-
-`npm run seeds:solana:privates` — выводит Solana-приватники из seed-фраз
-хранящихся в файле seeds.txt и записывает их в файл privates.txt
-
-`npm run privates:solana:addresses` — выводит Solana-адреса из
-Solana-приватников хранящихся в файле privates.txt и записывает их в файл
-addresses.txt
-
-### Другое
-
-`npm run shuffle privates.txt` — перемешивает строки в текстовом файле (в данном
-примере privates.txt) и записывает их в файл privates.shuffled.txt
-
-`npm run group privates.shuffled.txt 9` — группирует строки в текстовом файле (в
-данном примере privates.shuffled.txt, группы по 9 строк) и записывает их в файл
-privates.shuffled.grouped.txt
+- Agoric
+- Akash
+- Axelar
+- Bostrom
+- Celestia
+- Chihuahua
+- Cosmos Hub
+- Cronos POS
+- dYdX
+- Dymension
+- Evmos
+- Gitopia
+- Gravity Bridge
+- Injective
+- IRISnet
+- Juno
+- Kava
+- KYVE
+- LikeCoin
+- Mars Hub
+- Neutron
+- Noble
+- OmniFlix
+- Osmosis
+- Passage
+- Persistence
+- Quasar
+- Quicksilver
+- Regen
+- Saga
+- Secret Network
+- SEDA
+- Sentinel
+- Shentu
+- Sifchain
+- Sommelier
+- Stargaze
+- Stride
+- Terra
+- Terra Classic
+- UX (umee)
 
 ---
 
