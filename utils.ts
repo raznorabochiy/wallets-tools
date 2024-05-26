@@ -47,8 +47,12 @@ export function seedsToAddressesBuilder(
     const stream = fsCallback.createWriteStream(ADDRESSES_FILENAME);
 
     for (const seed of seeds) {
-      const address = await func(seed, opt);
-      stream.write(`${address}\n`);
+      try {
+        const address = await func(seed, opt);
+        stream.write(`${address}\n`);
+      } catch (e) {
+        stream.write(`${e.shortMessage ?? e.message}\n`);
+      }
     }
 
     console.log(`Адреса записаны в ${ADDRESSES_FILENAME}`);
@@ -64,8 +68,12 @@ export function seedsToPrivatesBuilder(
     const stream = fsCallback.createWriteStream(PRIVATES_FILENAME);
 
     for (const seed of seeds) {
-      const privateKey = await func(seed, opt);
-      stream.write(`${privateKey}\n`);
+      try {
+        const privateKey = await func(seed, opt);
+        stream.write(`${privateKey}\n`);
+      } catch (e) {
+        stream.write(`${e.shortMessage ?? e.message}\n`);
+      }
     }
 
     console.log(`Приватники записаны в ${PRIVATES_FILENAME}`);
