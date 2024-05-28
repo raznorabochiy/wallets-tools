@@ -27,10 +27,10 @@
     "@types/inquirer": "^9.0.7",
     "aptos": "^1.19.0",
     "bs58": "^5.0.0",
+    "ed25519-keygen": "^0.6.2",
     "ethers": "^6.7.1",
     "inquirer": "^9.2.20",
     "manten": "^1.3.0",
-    "micro-ed25519-hdkey": "^0.1.2",
     "starknet": "^5.19.5",
     "tsx": "^4.7.3"
   }
