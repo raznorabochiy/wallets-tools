@@ -64,6 +64,10 @@ export async function getBlockchain() {
         name: "7) StarkNet",
         value: Blockchain.starknet,
       },
+      {
+        name: "8) Tron",
+        value: Blockchain.tron,
+      },
     ],
   });
 }

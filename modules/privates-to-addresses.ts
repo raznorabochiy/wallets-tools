@@ -7,6 +7,7 @@ import solana from "../blockchains/solana/privates-to-addresses";
 import starknetArgent from "../blockchains/starknet/argent/privates-to-addresses";
 import starknetBraavos from "../blockchains/starknet/braavos/privates-to-addresses";
 import sui from "../blockchains/sui/privates-to-addresses";
+import tron from "../blockchains/tron/privates-to-addresses";
 
 async function privatesToAddresses(blockchain: Blockchain, options?: Options) {
   switch (blockchain) {
@@ -35,6 +36,9 @@ async function privatesToAddresses(blockchain: Blockchain, options?: Options) {
       break;
     case Blockchain.sui:
       await sui();
+      break;
+    case Blockchain.tron:
+      await tron();
       break;
     default:
       break;

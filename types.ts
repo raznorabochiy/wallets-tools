@@ -13,6 +13,7 @@ export enum Blockchain {
   solana,
   starknet,
   sui,
+  tron,
 }
 
 export enum StarknetWallet {

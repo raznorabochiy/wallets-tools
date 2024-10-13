@@ -7,6 +7,7 @@ import solana from "../blockchains/solana/seeds-to-privates";
 import starknetArgent from "../blockchains/starknet/argent/seeds-to-privates";
 import starknetBraavos from "../blockchains/starknet/braavos/seeds-to-privates";
 import sui from "../blockchains/sui/seeds-to-privates";
+import tron from "../blockchains/tron/seeds-to-privates";
 
 async function seedsToPrivates(blockchain: Blockchain, options?: Options) {
   switch (blockchain) {
@@ -35,6 +36,9 @@ async function seedsToPrivates(blockchain: Blockchain, options?: Options) {
       break;
     case Blockchain.sui:
       await sui();
+      break;
+    case Blockchain.tron:
+      await tron();
       break;
     default:
       break;

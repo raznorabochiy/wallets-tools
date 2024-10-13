@@ -7,6 +7,7 @@ import solana from "../blockchains/solana/seeds-to-addresses";
 import starknetArgent from "../blockchains/starknet/argent/seeds-to-addresses";
 import starknetBraavos from "../blockchains/starknet/braavos/seeds-to-addresses";
 import sui from "../blockchains/sui/seeds-to-addresses";
+import tron from "../blockchains/tron/seeds-to-addresses";
 
 async function seedsToAddresses(blockchain: Blockchain, options?: Options) {
   switch (blockchain) {
@@ -35,6 +36,9 @@ async function seedsToAddresses(blockchain: Blockchain, options?: Options) {
       break;
     case Blockchain.sui:
       await sui();
+      break;
+    case Blockchain.tron:
+      await tron();
       break;
     default:
       break;

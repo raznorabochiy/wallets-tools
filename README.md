@@ -32,6 +32,7 @@ npm start
 - Solana
 - StarkNet (ArgentX, Braavos)
 - Sui
+- Tron
 
 ### Поддерживаемые Cosmos-сети
 

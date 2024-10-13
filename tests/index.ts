@@ -9,4 +9,5 @@ await describe("All", async ({ runTestSuite }) => {
   await runTestSuite(import("./starknet-argent"));
   await runTestSuite(import("./starknet-braavos"));
   await runTestSuite(import("./sui"));
+  await runTestSuite(import("./tron"));
 });
