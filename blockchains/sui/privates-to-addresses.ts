@@ -1,5 +1,5 @@
-import { Ed25519Keypair } from "@mysten/sui.js/keypairs/ed25519";
-import { decodeSuiPrivateKey } from "@mysten/sui.js/cryptography";
+import { Ed25519Keypair } from "@mysten/sui/keypairs/ed25519";
+import { decodeSuiPrivateKey } from "@mysten/sui/cryptography";
 import { privatesToAddressesBuilder } from "../../utils";
 
 export function getAddressFromPrivate(key: string): string {

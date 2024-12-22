@@ -1,7 +1,8 @@
 import { mnemonicToSeedSync } from "@scure/bip39";
 import { Keypair } from "@solana/web3.js";
 import bs58 from "bs58";
-import { HDKey } from "ed25519-keygen/hdkey";
+import { HDKey } from "micro-key-producer/slip10.js";
+
 import { SOLANA_DERIVATION_PATH } from "../../constants";
 
 export function seedPhraseToPrivateKey(seedPhrase: string) {
