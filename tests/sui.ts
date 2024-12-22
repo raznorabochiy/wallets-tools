@@ -6,7 +6,7 @@ import { getAddressFromPrivate } from "../blockchains/sui/privates-to-addresses"
 
 export default testSuite(({ describe }) => {
   const privateKey =
-    "0x500f699af0c9412409d1aeebe4eceef870cdec3905a0f5deebdfbe7f6232aed4";
+    "suiprivkey1qpgq76v67ry5zfqf6xhwhe8vamu8pn0v8yz6paw7a00mulmzx2hdgv37wzs";
   const address =
     "0xb55f987c7edddbeecf567d0eebb4a092ab5db4b8b61dccdb0a9e728aa76d41f1";
 
