@@ -10,6 +10,7 @@ export enum Blockchain {
   aptos,
   cosmos,
   evm,
+  fuel,
   solana,
   starknet,
   sui,

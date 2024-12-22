@@ -5,6 +5,7 @@ await describe("All", async ({ runTestSuite }) => {
   await runTestSuite(import("./aptos"));
   await runTestSuite(import("./cosmos"));
   await runTestSuite(import("./evm"));
+  await runTestSuite(import("./fuel"));
   await runTestSuite(import("./solana"));
   await runTestSuite(import("./starknet-argent"));
   await runTestSuite(import("./starknet-braavos"));

@@ -3,6 +3,7 @@ import aleo from "../blockchains/aleo/seeds-to-addresses";
 import aptos from "../blockchains/aptos/seeds-to-addresses";
 import cosmos from "../blockchains/cosmos/seeds-to-addresses";
 import evm from "../blockchains/evm/seeds-to-addresses";
+import fuel from "../blockchains/fuel/seeds-to-addresses";
 import solana from "../blockchains/solana/seeds-to-addresses";
 import starknetArgent from "../blockchains/starknet/argent/seeds-to-addresses";
 import starknetBraavos from "../blockchains/starknet/braavos/seeds-to-addresses";
@@ -22,6 +23,9 @@ async function seedsToAddresses(blockchain: Blockchain, options?: Options) {
       break;
     case Blockchain.evm:
       await evm();
+      break;
+    case Blockchain.fuel:
+      await fuel();
       break;
     case Blockchain.solana:
       await solana();

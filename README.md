@@ -29,6 +29,7 @@ npm start
 - Aptos
 - Cosmos (много разных сетей, смотри ниже)
 - EVM
+- Fuel
 - Solana
 - StarkNet (ArgentX, Braavos)
 - Sui

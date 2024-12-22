@@ -8,6 +8,11 @@ import {
   TopLevel,
 } from "../types";
 
+function counter(startIndex = 0) {
+  let index = startIndex;
+  return () => index = index + 1;
+}
+
 export async function getTopLevel() {
   return select({
     message: "Действие:",
@@ -32,40 +37,46 @@ export async function getTopLevel() {
   });
 }
 
+const getBlockchainIndex = counter();
+
 export async function getBlockchain() {
   return select({
     message: "Выберите блокчейн:",
     choices: [
       {
-        name: "1) Aleo",
+        name: `${getBlockchainIndex()}) Aleo`,
         value: Blockchain.aleo,
       },
       {
-        name: "2) Aptos",
+        name: `${getBlockchainIndex()}) Aptos`,
         value: Blockchain.aptos,
       },
       {
-        name: "3) Cosmos",
+        name: `${getBlockchainIndex()}) Cosmos`,
         value: Blockchain.cosmos,
       },
       {
-        name: "4) EVM",
+        name: `${getBlockchainIndex()}) EVM`,
         value: Blockchain.evm,
       },
       {
-        name: "5) Sui",
-        value: Blockchain.sui,
+        name: `${getBlockchainIndex()}) Fuel`,
+        value: Blockchain.fuel,
       },
       {
-        name: "6) Solana",
+        name: `${getBlockchainIndex()}) Solana`,
         value: Blockchain.solana,
       },
       {
-        name: "7) StarkNet",
+        name: `${getBlockchainIndex()}) StarkNet`,
         value: Blockchain.starknet,
       },
       {
-        name: "8) Tron",
+        name: `${getBlockchainIndex()}) Sui`,
+        value: Blockchain.sui,
+      },
+      {
+        name: `${getBlockchainIndex()}) Tron`,
         value: Blockchain.tron,
       },
     ],
